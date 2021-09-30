@@ -19,6 +19,9 @@
 --
 -- Table structure for table `name_basics`
 --
+DROP DATABASE IF EXISTS imdb;
+CREATE DATABASE imdb;
+USE imdb;
 
 DROP TABLE IF EXISTS `name_basics`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
