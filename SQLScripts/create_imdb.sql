@@ -19,9 +19,9 @@
 --
 -- Table structure for table `name_basics`
 --
-DROP DATABASE IF EXISTS imdb;
-CREATE DATABASE imdb;
-USE imdb;
+DROP DATABASE IF EXISTS imdbnew;
+CREATE DATABASE imdbnew;
+USE imdbnew;
 
 DROP TABLE IF EXISTS `name_basics`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -33,7 +33,7 @@ CREATE TABLE `name_basics` (
   `death_year` varchar(45) DEFAULT NULL,
   `primary_profession` varchar(128) DEFAULT NULL,
   `known_for_titles` varchar(128) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -52,7 +52,7 @@ CREATE TABLE `title_akas` (
   `types` varchar(512) DEFAULT NULL,
   `attributes` varchar(512) DEFAULT NULL,
   `is_original` varchar(45) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -73,7 +73,7 @@ CREATE TABLE `title_basics` (
   `runtime` varchar(45) DEFAULT NULL,
   `genres` varchar(256) DEFAULT NULL,
   PRIMARY KEY (`tconst`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -87,7 +87,7 @@ CREATE TABLE `title_crew` (
   `tconst` varchar(128) DEFAULT NULL,
   `directors` text,
   `writer` text
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -103,7 +103,7 @@ CREATE TABLE `title_episode` (
   `season_number` text,
   `episode_number` text,
   PRIMARY KEY (`tconst`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -120,7 +120,7 @@ CREATE TABLE `title_principals` (
   `category` text,
   `job` text,
   `characters` text
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -135,7 +135,7 @@ CREATE TABLE `title_ratings` (
   `rating` varchar(45) DEFAULT NULL,
   `votes` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`tconst`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
